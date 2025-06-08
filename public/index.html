@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas Campeãs - Consulta</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Painel de Consultas - Receitas</h1>
+  <button id="toggle-dark-mode" class="toggle-button">🌙</button>
+
+  <div class="consulta-bloco">
+    <h2>Cozinheiros Campeões por Ano</h2>
+    <form id="form-campeoes">
+      <input type="number" id="input-ano" placeholder="Digite o ano (ex: 2023)" required>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+
+  <div class="consulta-bloco">
+    <h2>Receitas por Ingrediente</h2>
+    <form id="form-ingredientes">
+      <input type="text" id="input-ingrediente" placeholder="Digite o nome do ingrediente (ex: Frango)" required>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+
+  <div class="consulta-bloco">
+    <h2>Cozinheiro(s) com Contrato Mais Antigo</h2>
+    <button id="btn-antigos" type="button">Buscar</button>
+  </div>
+
+  <div id="resultados">
+  </div>
+</div>
+
+<script src="scripts/main.js" defer></script>
+</body>
+</html>
